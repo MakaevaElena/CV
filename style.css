@@ -19,9 +19,12 @@ p {
 }
 
 .block {
-
     display: grid;
     grid-template-columns: 1fr 3fr;
+}
+
+.title {
+    margin: 3%;
 }
 
 /* БЛОК FIRST */
@@ -115,7 +118,6 @@ p {
 
 .about-block {
     background-color: rgb(94, 93, 93);
-    /* box-shadow: 5px 5px 8px rgb(223, 222, 222); */
     border-radius: 3%;
     padding: 3%;
     margin: 3%;
@@ -203,4 +205,27 @@ p {
 footer {
     margin: 5% auto;
     text-align: center;
+}
+
+/* MEDIA ЗАПРОСЫ */
+@media screen and (max-width: 740px) {
+
+    .block,
+    .about,
+    .contacts,
+    .first {
+        display: block;
+    }
+
+    .photo img {
+        max-width: 30%;
+    }
+
+    .experience-block p {
+        margin-top: 3%;
+    }
+
+    .links img {
+        max-width: 10%;
+    }
 }
